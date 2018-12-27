@@ -8,12 +8,10 @@ module Writeup
     raise "destination must end in .html" unless destination =~ /\.html$/
 
     @document = Writeup::Document.new(markup)
+    @writeup_dir = File.dirname(__FILE__)
     result = template.result(binding)
-    destination_dir = File.dirname(destination)
-    stylesheet_path = "#{File.dirname(__FILE__)}/../stylesheets/compiled/writeup.css"
 
     File.open(destination, "w") { |f| f.puts(result) }
-    `cp "#{stylesheet_path}" "#{destination_dir}/writeup.css"`
   end
 
   def self.template
