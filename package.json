@@ -1,0 +1,16 @@
+{
+  "name": "writeup",
+  "scripts": {
+    "build-css": "sass --no-source-map ./stylesheets/raw/application.scss ./stylesheets/compiled/writeup.css",
+    "uglify-css": "uglifycss --output ./stylesheets/compiled/writeup.css ./stylesheets/compiled/writeup.css"
+  },
+  "license": "no",
+  "private": true,
+  "devDependencies": {
+    "imports-loader": "^0.8.0",
+    "sass": "^1.10.2",
+    "uglifycss": "0.0.29",
+    "webpack": "^4.17.0",
+    "webpack-cli": "^3.1.0"
+  }
+}
