@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/joeyschoblaska/writeup"
   s.license     = "MIT"
 
-  s.files       = `git ls-files lib`.split("\n")
+  s.files       = `git ls-files lib bin stylesheets layout`.split("\n")
   s.executables << "writeup"
 
   s.add_development_dependency "rake"
