@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "writeup"
-  s.version     = "1.0.0"
+  s.version     = "1.1.0"
   s.summary     = "Generic components from jeromegn/DocumentUp for generating static HTML documentation from Markdown."
   s.author      = "Joey Schoblaska"
   s.homepage    = "https://github.com/joeyschoblaska/writeup"
