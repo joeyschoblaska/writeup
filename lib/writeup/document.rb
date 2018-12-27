@@ -13,6 +13,10 @@ class Writeup::Document
     parsed[:toc]
   end
 
+  def title
+    parsed[:title]
+  end
+
   private
 
   def parsed
@@ -25,6 +29,7 @@ class Writeup::Document
       TaskList::Filter,
       HTML::Pipeline::SanitizationFilter,
       Writeup::Filters::TableOfContents,
+      Writeup::Filters::Title,
       HTML::Pipeline::ImageMaxWidthFilter,
       HTML::Pipeline::SyntaxHighlightFilter,
       HTML::Pipeline::EmojiFilter,

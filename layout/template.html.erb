@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Writeup</title>
+    <title><%= @document.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Alegreya:400italic,700italic,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="writeup.css" media="all">
@@ -11,7 +11,7 @@
     <div id="container">
       <div id="nav">
         <div id="header">
-          <span id="logo">Title</span>
+          <span id="logo"><%= @document.title %></span>
         </div>
         <div id="sections" class="section">
           <%= @document.toc %>
