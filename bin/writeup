@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "writeup"
+
+markup = File.read(ARGV[0])
+Writeup.render(markup, ARGV[1])
