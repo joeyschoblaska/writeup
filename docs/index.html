@@ -30,16 +30,14 @@
 <p>Writeup is an extraction of the components of <a href="https://github.com/jeromegn/DocumentUp">DocumentUp</a> that handle converting Markdown to HTML files, wrapped in a gem with an executable.</p>
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
-<pre><code>gem install writeup
-</code></pre>
+<p><code>gem install writeup</code></p>
 <p>Alternatively, you can add Writeup to your gemfile and use the library directly from within your code.</p>
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 <p>Writeup generates a single HTML file with styles in-lined.</p>
 <h3>
 <a id="command-line" class="anchor" href="#command-line" aria-hidden="true"><span class="octicon octicon-link"></span></a>Command line</h3>
-<pre><code>writeup path/to/document.md path/to/output.html
-</code></pre>
+<p><code>writeup path/to/document.md path/to/output.html</code></p>
 <h3>
 <a id="library" class="anchor" href="#library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Library</h3>
 <pre lang="ruby" class="highlight-ruby"><span class="no">Writeup</span><span class="p">.</span><span class="nf">render</span><span class="p">(</span><span class="n">markdown_string</span><span class="p">,</span> <span class="n">destination_path</span><span class="p">)</span>

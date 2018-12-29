@@ -2,9 +2,7 @@
 Writeup is an extraction of the components of [DocumentUp](https://github.com/jeromegn/DocumentUp) that handle converting Markdown to HTML files, wrapped in a gem with an executable.
 
 ## Installation
-```
-gem install writeup
-```
+`gem install writeup`
 
 Alternatively, you can add Writeup to your gemfile and use the library directly from within your code.
 
@@ -12,9 +10,7 @@ Alternatively, you can add Writeup to your gemfile and use the library directly 
 Writeup generates a single HTML file with styles in-lined.
 
 ### Command line
-```
-writeup path/to/document.md path/to/output.html
-```
+`writeup path/to/document.md path/to/output.html`
 
 ### Library
 ```ruby
